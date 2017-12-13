@@ -5,7 +5,10 @@ class Content extends Component {
 	constructor(){
 		super();
 		this.state = {
-			count:0
+			count:0,
+			number1:0,
+			number2:0,
+			result:0
 		};
 		//bind envia el contexto del this a la funcion
 		this.handleCountClick = this.handleCountClick.bind(this);
@@ -15,10 +18,7 @@ class Content extends Component {
 	}
 	componentDidMount(){
 		this.setState({
-			count:1,
-			number1:0,
-			number2:0,
-			result:0
+			count:1
 		});
 	}
 	//siempre es obligatorio el usuo de  handle.. nombre evento en click, change, etc.

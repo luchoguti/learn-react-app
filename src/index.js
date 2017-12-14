@@ -1,16 +1,18 @@
 // Dependencies
 import React from 'react';
-import {render} from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { render } from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 // Routers
 import AppRoutes from './routes';
 
 // Assets
 import './index.css';
-import registerServiceWorker from './registerServiceWorker';
 
-render(<BrowserRouter>
+render(
+	<Router>
 		<AppRoutes/>
-	   </BrowserRouter>,
-document.getElementById('root'));
-registerServiceWorker();
+	</Router>,
+document.getElementById('root')
+);
+

@@ -15,8 +15,8 @@ class Content extends Component {
 			<div className="Content">
 				{body}
 			</div>
-			);
-		}
+		);
 	}
+}
 
-	export default Content;
+export default Content;
